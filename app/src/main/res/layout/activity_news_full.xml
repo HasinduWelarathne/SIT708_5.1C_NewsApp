@@ -9,8 +9,27 @@
     
     <WebView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/web_view">
     </WebView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/web_view"
+        android:gravity="left"
+        android:text="Related Stories"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/related_stories_title">
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/related_stories_title"
+        android:id="@+id/related_stories_recycler_view">
+    </androidx.recyclerview.widget.RecyclerView>
+
 
 </RelativeLayout>
